@@ -1,4 +1,4 @@
-class Solution {
+class ReverseString {
     public void reverseString(char[] s) {
         char temp;
         int n=s.length;
