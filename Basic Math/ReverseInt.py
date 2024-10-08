@@ -26,15 +26,18 @@ Constraints:
 
 class Solution:
     def reverse(self, x: int) -> int:
-        min= -2**31
-        max= 2**31 - 1
 # if x is negative, extract it convert it to positive, then to string, reverse it then convert back to string and multiply by -1 
-        if x<0:
-            y=-1*int(str(abs(x))[::-1])
-# if x is positive int
+        if x < 0:
+            y = -1 * int(str(abs(x))[::-1])
+         # if x is positive int
         else:
-            y= int(str(abs(x))[::-1])
+            y = int(str(abs(x))[::-1])
 #value to go outside the signed 32-bit integer range [-231, 231 - 1]
-        if y>min and y<max:
+        if y <= 2147483647 and y >= -2147483648:
             return y
+        return 0
+
+
+
+       
         
