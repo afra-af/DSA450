@@ -1,5 +1,5 @@
 ## SELECTION SORT
-def selection_sort(arr):
+##def selection_sort(arr):
     # Traverse through all array elements
     for i in range(len(arr)):
         # Find the minimum element in remaining unsorted array
